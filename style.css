@@ -1,0 +1,268 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+}
+html{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+}
+.container1{
+    width: 100%;
+    height: 30%;
+}
+.container1>img{
+    width: 100%;
+    height: min-content;
+}
+.container2{
+    margin: 20px;
+    width: 280px;
+}
+h1{
+    margin-bottom: 10px;
+}
+.lists, .lists3{
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    margin-top: 8px;
+    width: 250px;
+}
+.lists>img{
+    padding-bottom: 10px;
+}
+.lists3>img{
+    padding-bottom: 10px;
+}
+.lists>p{
+    line-height: 15px;
+    font-size: 0.8rem;
+    margin: 0 0 0 10px;
+   
+}
+.lists3>p{
+    margin-left: 10px;
+    font-size: 0.8rem;
+    line-height: normal;
+    line-height: 25px;
+}
+p{
+    font-size: 0.8rem;
+    margin: 0;
+    line-height: 20px;
+}
+h5{
+    margin-bottom: 8px;
+}
+input{
+    height: 15px;
+    padding: 15px 30px;
+    width: 216.8px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+button{
+    height: 50px;
+    width: 100%;
+    border-radius: 10px;
+    color: rgb(250, 250, 250);
+    background-color: rgb(43, 43, 67);
+    font-size: 1.0rem;
+    padding: 15px 25px;
+}
+.container1, .container2{
+    display: block;
+}
+.thanks{
+    font-size: 3.0rem;
+    margin-bottom: 0;
+    line-height: 2.5rem;
+}
+button:hover, input:hover{
+    cursor: pointer;
+}
+.container3{
+    margin: 20px;
+    font-size: 1.5rem;
+    display: none;
+}
+.container3a{
+    height: 85vh;
+    align-content: center;
+}
+.container3a>img{
+    width: 50px;
+}
+.last{
+    height: 50px;
+}
+.last:hover{
+    background: linear-gradient(to right, hsl(4, 100%, 67%), rgb(253, 160, 79));
+    border-color: hsl(4, 100%, 67%);
+    cursor: pointer;
+}
+.email{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.error{
+    color: rgb(185, 11, 11);
+    margin: 0;
+    font-size:0.9rem;
+    align-content: end;
+    margin-bottom: 8px;
+    display: none;
+}
+.block{
+    display: block;
+}
+
+.none{
+    display: none;
+}
+.desktop{
+    display: none;
+}
+@media (min-width:375px) {
+    .main-container{
+        width: 375px;
+    }
+    .container1{
+        width: 100%;
+    }
+    .container2{
+        width: 80%;
+        height: fit-content;
+        margin-top: 0;
+    }
+    input{
+        width: 80%;
+    }
+    h1{
+        margin-top: 10px;
+    }
+}
+@media (min-width:425px) {
+    body{
+        display: grid;
+        place-items: center;
+        background-color: hsl(234, 29%, 20%);
+    }
+    .main-container{
+        background-color: white;
+    }
+    .container2{
+        width: 85%;
+        margin: 0;
+        padding: 20px;
+        background-color: white;
+    }
+    .lists{
+        line-height: 40px;
+        width: 270px;
+        margin-top: 10px;
+    }
+    .container3{
+        width: 200px;
+    }
+    .thanks{
+        margin-bottom: 20px;
+    }
+    input{
+        width: 81%;
+    }
+    
+}
+@media (min-width:768px){
+    body{
+        display: grid;
+        place-items: center;
+        background-color: hsl(234, 29%, 20%);
+        width: 100%;
+        height: 100vh;
+    }
+    .main-container{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        align-content: center;
+        background-color: white;
+        padding: 20px;
+        width: 728px;
+        border-radius: 18px;
+        height: 540px;
+    }
+    h1{
+        font-size: 40px;
+        margin-top: 0;
+    }
+    .mobile{
+        display: none;
+    }
+    .container1{
+        height: min-content;
+    }
+    .container1>img{
+        margin: 0;
+        padding: 0;
+    }
+    .container2{
+        margin-top: 0;
+        height: fit-content;
+        font-size: 1.2rem;
+    }
+    .lists{
+        height: fit-content;
+        width: 300px;
+    }
+    .lists>p{
+        font-size: 1.0em;
+        line-height: 25px;
+    }
+    .lists>img{
+        
+        width: 50px;
+    }
+    .lists3{
+        height: fit-content;
+    }
+    .lists3>img{
+        width: 30px;
+    }
+    .lists3>p{
+        font-size: 1.0em;
+    }
+    p{
+        font-size: 1.2rem;
+        line-height: 25px;
+    }
+    .desktop{
+        display: block;
+        height: 400px;
+    }
+    .container3{
+        background-color: white;
+        width: 360px;
+        height: 410px;
+        padding: 20px 20px 0 20px;
+        border-radius: 10px;
+        position: relative;
+    }
+    .container3a{
+        height: 200px;
+        line-height: normal;
+    }
+    .container3>button{
+        position: absolute;
+        height: fit-content;
+        bottom: 20px;
+        width: 360px;
+    }
+}
